@@ -1,0 +1,640 @@
+
+body {
+    font-family: "Cairo", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f0f4f8, #ffffff);
+    color: #333;
+}
+
+
+header {
+    background: linear-gradient(to right, #0077cc, #005bb5);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header .search-form {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+header .search-form input[type="text"] {
+    width: 70%;
+    padding: 12px;
+    font-size: 1em;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .search-form button {
+    padding: 12px 25px;
+    font-size: 1em;
+    background-color: #ffc107;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+header .search-form button:hover {
+    background-color: #e6a700;
+    transform: scale(1.1);
+}
+
+/* Main Navigation Styling */
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #005bb5;
+}
+
+/* Sub Navigation Styling */
+.sub-nav {
+    background-color: #000; /* خلفية سوداء كاملة */
+    padding: 15px 0;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sub-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sub-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sub-nav ul li a:hover {
+    background-color: #333; /* لون أغمق عند التمرير */
+    color: #ffd700; /* لون نص ذهبي عند التمرير */
+}
+
+.products {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.product {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    border-radius: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: auto;
+}
+
+.product h3 {
+    font-size: 1.5em;
+    color: #0077cc;
+    margin: 10px 0;
+}
+
+.product .category {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.product .price {
+    margin: 15px 0;
+    font-size: 1.1em;
+}
+
+.product .price .original-price {
+    color: #999;
+    margin-right: 10px;
+    text-decoration: line-through;
+}
+
+.product .price .discounted-price {
+    color: #e60000;
+    font-weight: bold;
+}
+
+.product .rating {
+    margin: 10px 0;
+    color: #ffc107;
+    font-size: 1.2em;
+}
+
+.product button {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.product button:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+/* الفوتر */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9em;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #ffc107;
+}
+
+.book-list {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.book-item {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+
+.book-image {
+    flex: 1;
+    max-width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.book-details {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.book-title {
+    font-size: 2em;
+    color: #2575fc;
+    margin: 0;
+}
+
+.book-category,
+.book-author,
+.book-description {
+    font-size: 1em;
+    color: #555;
+}
+
+.book-description {
+    margin-top: 10px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.book-price {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 10px;
+}
+
+.discounted-price {
+    color: #e60000;
+    font-weight: bold;
+}
+
+.book-rating {
+    color: #ffc107;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.add-to-cart {
+    background: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background: #1b5fbf;
+    transform: scale(1.05);
+}
+
+
+
+
+
+.contact-form {
+    background-color: white;
+    margin: 30px auto;
+    padding: 30px;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    text-align: center;
+    color: #0077cc;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+}
+
+.contact-form button {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #005bb5;
+}
+
+
+.tabs {
+    padding: 30px;
+    background-color: #fff;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tabs h2 {
+    text-align: center;
+    color: #0077cc;
+}
+
+.tab {
+    margin-bottom: 30px;
+}
+
+.tab h3 {
+    font-size: 1.5em;
+    color: #0077cc;
+}
+
+.tab ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tab ul li {
+    margin: 10px 0;
+}
+
+/* حاوية السلة */
+.cart-container {
+   
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: 1000;
+}
+
+#cart-button {
+    background-color: #ff9900;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+#cart-count {
+    background-color: red;
+    border-radius: 50%;
+    padding: 2px 6px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 0.8em;
+}
+
+/* نافذة السلة */
+.cart-modal {
+    display: none; /* مخفية بشكل افتراضي */
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.cart-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 40px;
+    border: 1px solid #888;
+    width: 80%;
+    
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cart-item-details {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.cart-item-details h4 {
+    margin: 0;
+    font-size: 1em;
+}
+
+.cart-item-details p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.remove-item {
+    background-color: #e60000;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cart-total {
+    text-align: right;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+#checkout-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+#checkout-button:hover {
+    background-color: #218838;
+}
+
+/* Checkout Section */
+.checkout {
+    padding: 30px;
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.checkout h2 {
+    text-align: center;
+    color: #0077cc;
+    margin-bottom: 20px;
+}
+
+.checkout-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.checkout-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+}
+
+.checkout-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-form button:hover {
+    background-color: #218838;
+}
+/* ... الشفرة السابقة ... */
+
+/* قسم سلة المشتريات في صفحة إتمام الدفع */
+.checkout .cart-summary {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.checkout .cart-summary h3 {
+    margin-bottom: 15px;
+    color: #0077cc;
+}
+
+.checkout .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.checkout .cart-item img {
+    width: 50px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.checkout .cart-item-details {
+    flex: 1;
+}
+
+.checkout .cart-item-details h4 {
+    margin: 0 0 5px;
+    font-size: 1em;
+    color: #0077cc;
+}
+
+.checkout .cart-item-details p {
+    margin: 2px 0;
+    font-size: 0.9em;
+}
+
+.checkout .cart-total {
+    text-align: right;
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #333;
+}
+
+

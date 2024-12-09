@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>متجر الكتب</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>متجر الكتب</h1>
+      <form class="search-form" id="search-form">
+        <input type="text" placeholder="ابحث عن كتاب..." id="search-input" />
+        <button type="submit">بحث</button>
+      </form>
+      <nav>
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="products.html">الكتب</a></li>
+          <li><a href="contact.html">اتصل بنا</a></li>
+        </ul>
+      </nav>
+      <br />
+      <nav class="sub-nav">
+        <ul>
+          <li><a href="#available-books">الكتب المتوفرة</a></li>
+          <li><a href="#bestsellers">الأكثر مبيعًا</a></li>
+          <li><a href="#new-books">الكتب الجديدة</a></li>
+        </ul>
+      </nav>
+      <div class="cart-container">
+        <button id="cart-button">🛒 <span id="cart-count">0</span></button>
+      </div>
+    </header>
+
+    <section class="products" id="available-books">
+      <h2>الكتب المتوفرة</h2>
+
+      <!-- الكتاب 1 -->
+      <div class="product" data-id="1">
+        <img src="assets/لن تتعب ابدا.jpg" alt="1" width="150" height="200" />
+        <h3>لن تتعب ابدًا</h3>
+        <p class="category">فئة:تطوير الذات</p>
+        <div class="price">
+          <span class="original-price"> <del>20$</del></span>
+          <span class="discounted-price">15$</span>
+        </div>
+        <div class="rating"><span>⭐⭐⭐⭐⭐</span> (5-5)</div>
+        <button>أضف إلى السلة</button>
+      </div>
+
+      <!-- الكتاب 2 -->
+      <div class="product" data-id="2">
+        <img
+          src="assets/الحضارة المصرية.jpg"
+          alt=" 2"
+          width="150"
+          height="200"
+        />
+        <h3>الحضارة المصرية</h3>
+        <p class="category">فئة: تاريخ</p>
+        <div class="price">
+          <span class="original-price"> <del>30$</del></span>
+          <span class="discounted-price">20$</span>
+        </div>
+        <div class="rating"><span>⭐⭐⭐⭐</span> (4-5)</div>
+        <button>أضف إلى السلة</button>
+      </div>
+
+      <!-- الكتاب 3 -->
+      <div class="product" data-id="3" >
+        <img src="assets/فلسفة الموت.jpg" alt=" 3" width="150" height="200" />
+        <h3>فلسفة الموت</h3>
+        <p class="category">فئة: فلسفة</p>
+        <div class="price">
+          <span class="original-price"> <del>45$</del></span>
+          <span class="discounted-price">35$</span>
+        </div>
+        <div class="rating"><span>⭐⭐⭐⭐⭐</span> (5-5)</div>
+        <button>أضف إلى السلة</button>
+      </div>
+
+      <!-- الكتاب 4 -->
+      <div class="product" data-id="4">
+        <img src="assets/فن الامبالاة.jpg" alt=" 4" width="150" height="200" />
+        <h3>فن الامبالاة</h3>
+        <p class="category">فئة: تطوير الذات</p>
+        <div class="price">
+          <span class="original-price"> <del>20$</del></span>
+          <span class="discounted-price">15$</span>
+        </div>
+        <div class="rating"><span>⭐⭐⭐⭐</span> (4-5)</div>
+        <button>أضف إلى السلة</button>
+      </div>
+
+      <!-- الكتاب 5 -->
+      <div class="product" data-id="5" >
+        <img
+          src="assets/الأب الغني والأب الفقير.jpg"
+          alt=" 5"
+          width="150"
+          height="200"
+        />
+        <h3>الأب الغني والأب الفقير</h3>
+        <p class="category">فئة: المال والاستثمار</p>
+        <div class="price">
+          <span class="original-price"> <del>50$</del></span>
+          <span class="discounted-price">40$</span>
+        </div>
+        <div class="rating"><span>⭐⭐⭐⭐</span> (4-5)</div>
+        <button>أضف إلى السلة</button>
+      </div>
+
+      <!-- الكتاب 6 -->
+      <div class="product" data-id="6" >
+        <img
+          src="assets/تدريب من القلب.jpg"
+          alt=" 6"
+          width="150"
+          height="200"
+        />
+        <h3>تدريب من القلب</h3>
+        <p class="category">فئة: تطوير الذات</p>
+        <div class="price">
+          <span class="original-price"> <del>30$</del></span>
+          <span class="discounted-price">20$</span>
+        </div>
+        <div class="rating"><span>⭐⭐⭐⭐⭐</span> (4-5)</div>
+        <button>أضف إلى السلة</button>
+      </div>
+
+    
+      
+    </section>
+    <section class="products" id="bestsellers">
+      <h2>الأكثر مبيعًا</h2>
+
+      <div class="product">
+        <img
+          src="assets/الأب الغني والأب الفقير.jpg"
+          alt=" 5"
+          width="150"
+          height="200"
+        />
+        <h3>الأب الغني والأب الفقير</h3>
+        <p class="category">فئة: المال والاستثمار</p>
+        <div class="price">
+          <span class="original-price"> <del>50$</del></span>
+          <span class="discounted-price">40$</span>
+        </div>
+        <div class="rating"><span>⭐⭐⭐⭐</span> (4-5)</div>
+        <button>أضف إلى السلة</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="assets/تدريب من القلب.jpg"
+          alt=" 6"
+          width="150"
+          height="200"
+        />
+        <h3>تدريب من القلب</h3>
+        <p class="category">فئة: تطوير الذات</p>
+        <div class="price">
+          <span class="original-price"> <del>30$</del></span>
+          <span class="discounted-price">20$</span>
+        </div>
+        <div class="rating"><span>⭐⭐⭐⭐⭐</span> (4-5)</div>
+        <button>أضف إلى السلة</button>
+      </div>
+
+      <div class="product" data-id="7">
+        <img
+          src="assets/مقامات الغضب.jpeg"
+          alt=" 8"
+          width="150"
+          height="200"
+        />
+        <h3>مقامات الغضب</h3>
+        <p class="category">فئة: قصص وروايات</p>
+        <div class="price">
+          <span class="original-price"> <del>30$</del></span>
+          <span class="discounted-price">25$</span>
+        </div>
+        <div class="rating"><span>⭐⭐⭐⭐⭐</span> (5-5)</div>
+        <button>أضف إلى السلة</button>
+      </div>
+    </section>
+    <section class="products" id="new-books">
+      <h2>الكتب الجديدة</h2>
+
+      <div class="product" data-id="8">
+        <img
+          src="assets/كيف تصبح انسانا.jpg"
+          alt="7"
+          width="150"
+          height="200"
+        />
+        <h3>كيف تصبح إنسانًا؟</h3>
+        <p class="category">فئة: الأدب والشعر</p>
+        <div class="price">
+          <span class="original-price"> <del>30$</del></span>
+          <span class="discounted-price">25$</span>
+        </div>
+        <div class="rating"><span>⭐⭐⭐⭐</span> (4-5)</div>
+        <button>أضف إلى السلة</button>
+      </div>
+
+      <div class="product">
+        <img src="assets/فن الامبالاة.jpg" alt=" 4" width="150" height="200" />
+        <h3>فن الامبالاة</h3>
+        <p class="category">فئة: تطوير الذات</p>
+        <div class="price">
+          <span class="original-price"> <del>20$</del></span>
+          <span class="discounted-price">15$</span>
+        </div>
+        <div class="rating"><span>⭐⭐⭐⭐</span> (4-5)</div>
+        <button>أضف إلى السلة</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="assets/مقامات الغضب.jpeg"
+          alt=" 8"
+          width="150"
+          height="200"
+        />
+        <h3>مقامات الغضب</h3>
+        <p class="category">فئة: قصص وروايات</p>
+        <div class="price">
+          <span class="original-price"> <del>30$</del></span>
+          <span class="discounted-price">25$</span>
+        </div>
+        <div class="rating"><span>⭐⭐⭐⭐⭐</span> (5-5)</div>
+        <button>أضف إلى السلة</button>
+      </div>
+    </section>
+
+    <footer>
+      <p>حقوق النشر © 2024 متجر الكتب</p>
+      <ul>
+        <li><a href="#">الشروط والأحكام</a></li>
+        <li><a href="#">سياسة الخصوصية</a></li>
+        <li><a href="#">مساعدة</a></li>
+      </ul>
+    </footer>
+    <div id="cart-modal" class="cart-modal">
+      <div class="cart-content">
+        <span class="close">&times;</span>
+        <h2>سلة المشتريات</h2>
+        <div id="cart-items"></div>
+        <div class="cart-total">
+          <strong>الإجمالي: </strong><span id="cart-total">0</span>$
+        </div>
+        <button id="checkout-button">إتمام الشراء</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

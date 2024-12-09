@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إتمام الدفع - متجر الكتب</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>متجر الكتب</h1>
+        <form class="search-form">
+            <input type="text" placeholder="ابحث عن كتاب..." />
+            <button type="submit">بحث</button>
+        </form>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="products.html">الكتب</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+            </ul>
+        </nav>
+        <br />
+        <nav class="sub-nav">
+            <ul>
+                <li><a href="#available-books">الكتب المتوفرة</a></li>
+                <li><a href="#bestsellers">الأكثر مبيعًا</a></li>
+                <li><a href="#new-books">الكتب الجديدة</a></li>
+            </ul>
+        </nav>
+        <div class="cart-container">
+            <button id="cart-button">🛒 <span id="cart-count">0</span></button>
+        </div>
+    </header>
+
+    <section class="checkout">
+        <h2>إتمام الدفع</h2>
+
+        <!-- قائمة العناصر في السلة -->
+        <div class="checkout-cart">
+            <h3>العناصر التي تريد شرائها:</h3>
+            <div id="checkout-cart-items"></div>
+            <div class="checkout-total">
+                <strong>الإجمالي: </strong><span id="checkout-total">0</span>$
+            </div>
+        </div>
+
+        <!-- نموذج الدفع -->
+        <form class="checkout-form" id="checkout-form">
+            <label for="name">الاسم الكامل:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="address">العنوان:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="card-number">رقم البطاقة الائتمانية:</label>
+            <input type="text" id="card-number" name="card-number" maxlength="16" required>
+
+            <label for="expiry">تاريخ انتهاء الصلاحية:</label>
+            <input type="text" id="expiry" name="expiry" placeholder="MM/YY" maxlength="5" required>
+
+            <label for="cvv">رمز CVV:</label>
+            <input type="text" id="cvv" name="cvv" maxlength="3" required>
+
+            <button type="submit">إتمام الدفع</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>حقوق النشر © 2024 متجر الكتب</p>
+        <ul>
+            <li><a href="#">الشروط والأحكام</a></li>
+            <li><a href="#">سياسة الخصوصية</a></li>
+            <li><a href="#">مساعدة</a></li>
+        </ul>
+    </footer>
+
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <span class="close">&times;</span>
+            <h2>سلة المشتريات</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">
+                <strong>الإجمالي: </strong><span id="cart-total">0</span>$
+            </div>
+            <button id="checkout-button">إتمام الشراء</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

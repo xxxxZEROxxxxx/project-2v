@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>متجر الكتب</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>متجر الكتب</h1>
+      <form class="search-form" id="search-form">
+        <input type="text" placeholder="ابحث عن كتاب..." id="search-input" />
+        <button type="submit">بحث</button>
+      </form>
+      <nav>
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="products.html">الكتب</a></li>
+          <li><a href="contact.html">اتصل بنا</a></li>
+        </ul>
+      </nav>
+
+    
+      <div class="cart-container">
+        <button id="cart-button">🛒 <span id="cart-count">0</span></button>
+      </div>
+    </header>
+
+    <section class="book-list">
+      <!-- الكتاب 1 -->
+      <div class="book-item" data-id="1">
+        <img
+            src="assets/لن تتعب ابدا.jpg"
+            alt="لن تتعب أبدًا"
+            class="book-image"
+        />
+        <div class="book-details">
+            <h3 class="book-title">لن تتعب أبدًا</h3>
+            <p class="book-category">فئة: تطوير الذات</p>
+            <p class="book-author">المؤلّف: ماري بينون راي</p>
+            <p class="book-description">
+                "لا يوجد أي مرض عضوي خطير، أنت سليم مئة بالمئة.. أنت مصاب بالإرهاق
+                فحسب، ضغط العمل ومشاكل المنزل والأقارب وضغوط الحياة أضعفت جسدك.."
+            </p>
+            <div class="book-price">
+                <span class="original-price"><del>20$</del></span>
+                <span class="discounted-price">15$</span>
+            </div>
+            <div class="book-rating"><span>⭐⭐⭐⭐⭐</span> (5-5)</div>
+            <button class="add-to-cart">أضف إلى السلة</button>
+        </div>
+    </div>
+
+    <!-- الكتاب 2 -->
+    <div class="book-item" data-id="2">
+        <img
+            src="assets/الحضارة المصرية.jpg"
+            alt="الحضارة المصرية"
+            class="book-image"
+        />
+        <div class="book-details">
+            <h3 class="book-title">الحضارة المصرية</h3>
+            <p class="book-category">فئة: تاريخ</p>
+            <p class="book-author">المؤلّف: الدكتور خزعل الماجدي</p>
+            <p class="book-description">
+                "تنطوي الحضارة المصرية على مجموعة خصوصيات نادرة منها أنها واحدة من
+                حضارتين أصيلتين لا سابق لهما (السومرية والمصرية)."
+            </p>
+            <div class="book-price">
+                <span class="original-price"><del>30$</del></span>
+                <span class="discounted-price">20$</span>
+            </div>
+            <div class="book-rating"><span>⭐⭐⭐⭐</span> (4-5)</div>
+            <button class="add-to-cart">أضف إلى السلة</button>
+        </div>
+    </div>
+
+      <!-- الكتاب 3 -->
+      <div class="book-item" data-id="3">
+        <img
+          src="assets/فلسفة الموت.jpg"
+          alt="فلسفة الموت"
+          class="book-image"
+        />
+        <div class="book-details">
+          <h3 class="book-title">فلسفة الموت</h3>
+          <p class="book-category">فئة: فلسفة</p>
+          <p class="book-author">المؤلّف: السيد الحراني</p>
+          <p class="book-description">
+            "من الأفكار التي عذَّبت الإنسانية باستمرار فكرة الموت وانتهاء الحياة
+            "الفناء للخلود"."
+          </p>
+          <div class="book-price">
+            <span class="original-price"><del>45$</del></span>
+            <span class="discounted-price">35$</span>
+          </div>
+          <div class="book-rating"><span>⭐⭐⭐⭐⭐</span> (5-5)</div>
+          <button class="add-to-cart">أضف إلى السلة</button>
+        </div>
+      </div>
+
+      <!-- الكتاب 4 -->
+      <div class="book-item" data-id="4">
+        <img
+          src="assets/فن الامبالاة.jpg"
+          alt="فن الامبالاة"
+          class="book-image"
+        />
+        <div class="book-details">
+          <h3 class="book-title">فن الامبالاة</h3>
+          <p class="book-category">فئة: تطوير الذات</p>
+          <p class="book-author">المؤلّف: مارك مانسون</p>
+          <p class="book-description">
+            "فلنكن صادقين، السيء سيء وعلينا أن نتعايش مع هذا."
+          </p>
+          <div class="book-price">
+            <span class="original-price"><del>20$</del></span>
+            <span class="discounted-price">15$</span>
+          </div>
+          <div class="book-rating"><span>⭐⭐⭐⭐</span> (4-5)</div>
+          <button class="add-to-cart">أضف إلى السلة</button>
+        </div>
+      </div>
+
+      <!-- الكتاب 5 -->
+      <div class="book-item" data-id="5">
+        <img
+          src="assets/الأب الغني والأب الفقير.jpg"
+          alt="الأب الغني والأب الفقير"
+          class="book-image"
+        />
+        <div class="book-details">
+          <h3 class="book-title">الأب الغني والأب الفقير</h3>
+          <p class="book-category">فئة: المال والاستثمار</p>
+          <p class="book-author">المؤلّف: روبرت تي كيوساكي</p>
+          <p class="book-description">
+            "تعلم الأسس المالية لتصبح ثريًا وتحقق النجاح المالي."
+          </p>
+          <div class="book-price">
+            <span class="original-price"><del>50$</del></span>
+            <span class="discounted-price">40$</span>
+          </div>
+          <div class="book-rating"><span>⭐⭐⭐⭐</span> (4-5)</div>
+          <button class="add-to-cart">أضف إلى السلة</button>
+        </div>
+      </div>
+
+      <!-- الكتاب 6 -->
+      <div class="book-item" data-id="6">
+        <img
+          src="assets/تدريب من القلب.jpg"
+          alt="تدريب من القلب"
+          class="book-image"
+        />
+        <div class="book-details">
+          <h3 class="book-title">تدريب من القلب</h3>
+          <p class="book-category">فئة: تطوير الذات</p>
+          <p class="book-author">المؤلّف: الدكتور جيري لينش</p>
+          <p class="book-description">
+            "أسس التدريب بحب وطرق لإلهام فريقك لتحقيق الأفضل."
+          </p>
+          <div class="book-price">
+            <span class="original-price"><del>30$</del></span>
+            <span class="discounted-price">20$</span>
+          </div>
+          <div class="book-rating"><span>⭐⭐⭐⭐⭐</span>(5-5)</div>
+          <button class="add-to-cart">أضف إلى السلة</button>
+        </div>
+      </div>
+
+      <!-- الكتاب 7 -->
+      <div class="book-item" data-id="7">
+        <img
+          src="assets/كيف تصبح انسانا.jpg"
+          alt="كيف تصبح إنسانًا؟"
+          class="book-image"
+        />
+        <div class="book-details">
+          <h3 class="book-title">كيف تصبح إنسانًا؟</h3>
+          <p class="book-category">فئة: الأدب والشعر</p>
+          <p class="book-author">المؤلّف: د. شريف عرفة</p>
+          <p class="book-description">
+            "هل الإنسان مجرد حيوان أم هناك ما يجعله مميزًا؟"
+          </p>
+          <div class="book-price">
+            <span class="original-price"><del>30$</del></span>
+            <span class="discounted-price">25$</span>
+          </div>
+          <div class="book-rating"><span>⭐⭐⭐⭐</span>(4-5)</div>
+          <button class="add-to-cart">أضف إلى السلة</button>
+        </div>
+      </div>
+
+      <!-- الكتاب 8 -->
+      <div class="book-item " data-id="8">
+        <img
+          src="assets/مقامات الغضب.jpeg"
+          alt="مقامات الغضب"
+          class="book-image"
+        />
+        <div class="book-details">
+          <h3 class="book-title">مقامات الغضب</h3>
+          <p class="book-category">فئة: قصص وروايات</p>
+          <p class="book-author">المؤلّف: صفاء النجار</p>
+          <p class="book-description">
+            "رواية تسلط الضوء على صراعات اجتماعية وسياسية معقدة."
+          </p>
+          <div class="book-price">
+            <span class="original-price"><del>30$</del></span>
+            <span class="discounted-price">25$</span>
+          </div>
+          <div class="book-rating"><span>⭐⭐⭐⭐⭐</span> (5-5)</div>
+          <button class="add-to-cart">أضف إلى السلة</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p>حقوق النشر © 2024 متجر الكتب</p>
+      <ul class="footer-links">
+        <li><a href="#" class="footer-link">الشروط والأحكام</a></li>
+        <li><a href="#" class="footer-link">سياسة الخصوصية</a></li>
+        <li><a href="#" class="footer-link">مساعدة</a></li>
+      </ul>
+    </footer>
+
+
+    <div id="cart-modal" class="cart-modal">
+      <div class="cart-content">
+          <span class="close">&times;</span>
+          <h2>سلة المشتريات</h2>
+          <div id="cart-items"></div>
+          <div class="cart-total">
+              <strong>الإجمالي: </strong><span id="cart-total">0</span>$
+          </div>
+          <button id="checkout-button">إتمام الشراء</button>
+      </div>
+  </div>
+
+  <script src="script.js"></script>
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
