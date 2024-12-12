@@ -33,43 +33,47 @@
         </div>
     </header>
 
-    <section class="checkout">
-        <h2>إتمام الدفع</h2>
-
-        <!-- قائمة العناصر في السلة -->
-        <div class="checkout-cart">
-            <h3>العناصر التي تريد شرائها:</h3>
-            <div id="checkout-cart-items"></div>
-            <div class="checkout-total">
-                <strong>الإجمالي: </strong><span id="checkout-total">0</span>$
-            </div>
-        </div>
-
-        <!-- نموذج الدفع -->
-        <form class="checkout-form" id="checkout-form">
-            <label for="name">الاسم الكامل:</label>
+    <section class="contact-form">
+        <h2>نموذج الاتصال</h2>
+        <!-- نموذج طلب وهمي -->
+        <form action="" method="get">
+            <label for="name">الاسم:</label>
             <input type="text" id="name" name="name" required>
-
+        
             <label for="email">البريد الإلكتروني:</label>
             <input type="email" id="email" name="email" required>
+        
+            <label for="message">الرسالة:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        
+       
 
-            <label for="address">العنوان:</label>
-            <input type="text" id="address" name="address" required>
-
-            <label for="card-number">رقم البطاقة الائتمانية:</label>
-            <input type="text" id="card-number" name="card-number" maxlength="16" required>
-
-            <label for="expiry">تاريخ انتهاء الصلاحية:</label>
-            <input type="text" id="expiry" name="expiry" placeholder="MM/YY" maxlength="5" required>
-
-            <label for="cvv">رمز CVV:</label>
-            <input type="text" id="cvv" name="cvv" maxlength="3" required>
-
-            <button type="submit">إتمام الدفع</button>
+            <button type="submit" onclick="alert('تم إرسال النموذج بنجاح! ')">إرسال</button>
         </form>
     </section>
 
-    <footer>
+    <section class="tabs">
+        <h2>مزيد من المعلومات</h2>
+        <div class="tab">
+            <h3>الأسئلة الشائعة</h3>
+            <ul>
+                <li><strong>كيف يمكنني شراء الكتب؟</strong> يمكنك إضافة الكتب إلى سلتك وإتمام عملية الدفع عبر الموقع.</li>
+                <li><strong>هل يوجد شحن دولي؟</strong> نعم، نحن نوفر الشحن إلى معظم الدول.</li>
+            </ul>
+        </div>
+
+        <div class="tab">
+            <h3>تفاصيل الاتصال</h3>
+            <p>إذا كنت بحاجة إلى المزيد من المساعدة، يمكنك الاتصال بنا عبر:</p>
+            <ul>
+                <li><strong>البريد الإلكتروني:</strong> supportAlaa@gmail.com</li>
+                <li><strong>الهاتف:</strong> +972 59000333</li>
+                <li><strong>العنوان:</strong>  شارع 5، المدينة خانيونس ،  الدولة فلسطين</li>
+            </ul>
+        </div>
+    </section>
+
+     <footer>
         <p>حقوق النشر © 2024 متجر الكتب</p>
         <ul>
             <li><a href="#">الشروط والأحكام</a></li>
